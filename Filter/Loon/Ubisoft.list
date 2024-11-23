@@ -1,4 +1,4 @@
 # 游戏平台
 
-HOST-SUFFIX,ubi.com,🎮 游戏平台
-HOST-SUFFIX,ubisoft.com,🎮 游戏平台
+DOMAIN-SUFFIX,ubi.com
+DOMAIN-SUFFIX,ubisoft.com
