@@ -1,4 +1,4 @@
 DOMAIN-KEYWORD,goofish
 # DOMAIN-SUFFIX,goofish.com
-#IP-CIDR,59.82.0.0/16
+IP-CIDR,59.82.0.0/16
 # DOMAIN,tls-goofish.dingtalk.com
