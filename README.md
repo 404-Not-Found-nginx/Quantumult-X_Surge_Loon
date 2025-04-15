@@ -1,2 +1,2 @@
-# Quantumult-X_Surge
+# Quantumult-X_Loon
 Apple软件规则
