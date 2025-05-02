@@ -4,3 +4,4 @@ IP-CIDR,59.82.0.0/16
 # DOMAIN,tls-goofish.dingtalk.com
 DOMAIN-SUFFIX,g.alicdn.com
 DOMAIN-SUFFIX,gw.alicdn.com
+IP-CIDR,47.246.0.0/16
