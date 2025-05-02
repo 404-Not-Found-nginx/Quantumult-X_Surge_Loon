@@ -4,3 +4,4 @@ IP-CIDR,59.82.0.0/16,Xianyu
 # HOST,tls-goofish.dingtalk.com,Xianyu
 HOST-SUFFIX,g.alicdn.com,Xianyu
 HOST-SUFFIX,gw.alicdn.com,Xianyu
+IP-CIDR,47.246.0.0/16,Xianyu
