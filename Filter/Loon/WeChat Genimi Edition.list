@@ -1,0 +1,49 @@
+# WeChat Gemini Edition - Optimized for Overseas Accounts
+# Last Updated: 2025-08-30
+# This ruleset is designed for Loon. Import this list and assign it to a PROXY policy group.
+# A separate rule for WeChat Pay (tenpay.com) should be created manually and assigned to DIRECT.
+
+#[Rule]
+# =======================================================
+# I. Core WeChat Services (for PROXY policy)
+# These domains are essential for the app's core functions for overseas accounts.
+# Using 'no-resolve' is recommended for privacy and performance.
+# =======================================================
+DOMAIN-SUFFIX, weixin.qq.com, no-resolve
+DOMAIN-SUFFIX, wechat.com, no-resolve
+DOMAIN-SUFFIX, wechatopen.com, no-resolve
+DOMAIN, short.weixin.qq.com, no-resolve
+
+# =======================================================
+# II. Content, CDN, and Other Tencent Services (for PROXY policy)
+# =======================================================
+DOMAIN-KEYWORD, weixin
+DOMAIN-KEYWORD, wechat
+DOMAIN-SUFFIX, qpic.cn
+DOMAIN-SUFFIX, qlogo.cn
+DOMAIN-SUFFIX, qq.com
+DOMAIN-SUFFIX, tencent.com
+
+# =======================================================
+# III. WeChat Pay (for DIRECT policy)
+# It is STRONGLY recommended to create a separate rule for this domain
+# in your main configuration and set its policy to DIRECT for stability.
+# =======================================================
+# DOMAIN-SUFFIX, tenpay.com
+
+# =======================================================
+# IV. Tencent IP Segments (for PROXY policy)
+# These are fallback rules.
+# =======================================================
+IP-CIDR, 101.32.104.0/24
+IP-CIDR, 101.32.118.0/24
+IP-CIDR, 101.32.132.0/24
+IP-CIDR, 113.108.6.0/24
+IP-CIDR, 121.51.130.0/24
+IP-CIDR, 121.51.34.0/24
+IP-CIDR, 121.51.66.0/24
+IP-CIDR, 183.3.232.0/24
+IP-CIDR, 183.3.235.0/24
+IP-CIDR, 203.205.143.0/24
+IP-CIDR, 203.205.210.128/25
+IP-CIDR, 203.205.220.0/24
