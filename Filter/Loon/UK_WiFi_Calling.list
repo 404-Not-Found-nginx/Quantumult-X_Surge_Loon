@@ -1,0 +1,73 @@
+# --- 英国 Wi-Fi Calling 全能版规则 (UK All-In-One) ---
+
+# Apple 地区检测
+DOMAIN-SUFFIX, gspe1-ssl.ls.apple.com
+
+# ==========================================
+# 1. giffgaff & O2 UK (核心：MNC 010)
+# ==========================================
+# 强制分流 ePDG 域名
+DOMAIN-SUFFIX, epdg.epc.mnc010.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX, ss.epdg.epc.mnc010.mcc234.pub.3gppnetwork.org
+# O2 专属鉴权域名
+DOMAIN-SUFFIX, vowifi.o2.co.uk
+DOMAIN-SUFFIX, giffgaff.com
+# O2/Giffgaff 核心网段
+IP-CIDR, 87.194.0.0/16, no-resolve
+
+# ==========================================
+# 2. Vodafone UK (核心：MNC 015)
+# ==========================================
+# 强制分流 ePDG 域名
+DOMAIN-SUFFIX, epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX, ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX, ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org
+# 沃达丰专属鉴权域名
+DOMAIN-SUFFIX, entsrv-uk.vodafone.com
+DOMAIN-SUFFIX, vuk-gto.prod.ondemandconnectivity.com
+DOMAIN, vfgb.idemia.io
+# 沃达丰核心网段
+IP-CIDR, 88.82.0.0/19, no-resolve
+IP-CIDR, 148.252.160.0/19, no-resolve
+
+# ==========================================
+# 3. Three UK (核心：MNC 020)
+# ==========================================
+# 强制分流 ePDG 域名
+DOMAIN-SUFFIX, epdg.epc.mnc020.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX, ss.epdg.epc.mnc020.mcc234.pub.3gppnetwork.org
+# Three 专属鉴权域名
+DOMAIN-SUFFIX, hutchison3g.com
+DOMAIN-SUFFIX, three.co.uk
+# Three 核心网段
+IP-CIDR, 92.40.0.0/16, no-resolve
+
+# ==========================================
+# 4. EE & CMLink UK (核心：MNC 030/033/001)
+# ==========================================
+# 强制分流 ePDG 域名 (MCC 234)
+DOMAIN-SUFFIX, epdg.epc.mnc030.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX, ss.epdg.epc.mnc030.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX, epdg.epc.mnc033.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX, ss.epdg.epc.mnc033.mcc234.pub.3gppnetwork.org
+# 强制分流 ePDG 域名 (MCC 235)
+DOMAIN-SUFFIX, epdg.epc.mnc001.mcc235.pub.3gppnetwork.org
+# EE 专属鉴权域名
+DOMAIN-SUFFIX, ct.ee.co.uk
+# EE 核心网段
+IP-CIDR, 46.68.0.0/17, no-resolve
+IP-CIDR, 31.94.0.0/16, no-resolve
+
+# ==========================================
+# 5. Sky Mobile (核心：MNC 057)
+# ==========================================
+# 强制分流 ePDG 域名
+DOMAIN-SUFFIX, epdg.epc.mnc057.mcc234.pub.3gppnetwork.org
+# Sky 专属鉴权域名
+DOMAIN-SUFFIX, sky.com
+
+# ==========================================
+# 6. 关键词与地理检测
+# ==========================================
+DOMAIN-KEYWORD, mcc234
+DOMAIN-KEYWORD, mcc235
