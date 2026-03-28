@@ -1,0 +1,55 @@
+# --- 美国 Wi-Fi Calling 全能版规则 (US All-In-One) ---
+
+# Apple 地区检测
+DOMAIN-SUFFIX, gspe1-ssl.ls.apple.com
+
+# ==========================================
+# 1. T-Mobile & Ultra Mobile (核心：MNC 260)
+# ==========================================
+# 强制分流 ePDG 域名
+DOMAIN-SUFFIX, epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX, ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX, ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
+# T-Mobile 专属鉴权域名
+DOMAIN-SUFFIX, entitlement.auth.t-mobile.com
+DOMAIN-SUFFIX, vvm.t-mobile.com
+# Ultra Mobile 专属域名
+DOMAIN-SUFFIX, ultra-mobile.com
+DOMAIN-SUFFIX, my.ultramobile.com
+# T-Mobile/Ultra 核心网段
+IP-CIDR, 208.54.0.0/16, no-resolve
+IP-CIDR, 66.94.0.0/19, no-resolve
+
+# ==========================================
+# 2. Verizon & Visible (核心：MNC 480)
+# ==========================================
+# 强制分流 ePDG 域名
+DOMAIN-SUFFIX, epdg.epc.mnc480.mcc311.pub.3gppnetwork.org
+DOMAIN-SUFFIX, wo.vzwwo.com
+# Verizon 专属鉴权域名
+DOMAIN-SUFFIX, vzw.com
+# Verizon 核心网段
+IP-CIDR, 69.82.0.0/15, no-resolve
+
+# ==========================================
+# 3. AT&T & Cricket (核心：MNC 410)
+# ==========================================
+# 强制分流 ePDG 域名
+DOMAIN-SUFFIX, epdg.epc.mnc410.mcc310.pub.3gppnetwork.org
+# AT&T 专属鉴权域名
+DOMAIN-SUFFIX, att.com
+# AT&T 核心网段
+IP-CIDR, 166.128.0.0/9, no-resolve
+
+# ==========================================
+# 4. Google Fi (T-Mobile 线路)
+# ==========================================
+# Google Fi 专属鉴权域名
+DOMAIN-SUFFIX, fi.google.com
+DOMAIN-KEYWORD, googlefi
+
+# ==========================================
+# 5. 关键词与地理检测
+# ==========================================
+DOMAIN-KEYWORD, mcc310
+DOMAIN-KEYWORD, mcc311
