@@ -14,8 +14,7 @@ DOMAIN-SUFFIX, ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX, entitlement.auth.t-mobile.com
 DOMAIN-SUFFIX, vvm.t-mobile.com
 # Ultra Mobile 专属域名
-DOMAIN-SUFFIX, ultra-mobile.com
-DOMAIN-SUFFIX, my.ultramobile.com
+DOMAIN-SUFFIX, ultramobile.com
 # T-Mobile/Ultra 核心网段
 IP-CIDR, 208.54.0.0/16, no-resolve
 IP-CIDR, 66.94.0.0/19, no-resolve
