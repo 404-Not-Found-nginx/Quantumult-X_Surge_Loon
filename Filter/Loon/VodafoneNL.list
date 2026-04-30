@@ -1,0 +1,21 @@
+# ==========================================
+# 3. Vodafone Netherlands (MCC 204, MNC 04)
+# ==========================================
+
+# --- [3.1] 荷兰 ePDG 标准域名 (3GPP) ---
+# 自动涵盖 epdg / ss.epdg / geo 等所有子域名变体
+DOMAIN-SUFFIX, mnc004.mcc204.pub.3gppnetwork.org
+
+# --- [3.2] 荷兰本地业务与鉴权域名 ---
+# 自动涵盖 vodafone.nl 下的所有子域名（wifi/entitlement/config/ims/gprs）
+DOMAIN-SUFFIX, vodafone.nl
+
+# --- [3.3] 荷兰定向发现服务器 (非全后缀) ---
+# 仅针对荷兰区域 (nle)
+DOMAIN, v-hds-nle.vodafone.com
+
+# --- [3.4] 荷兰核心网段 (IMS/EPC 基础设施) ---
+# 强制不解析 IP，直接撞向荷兰节点
+IP-CIDR, 139.7.0.0/16, no-resolve
+IP-CIDR, 82.216.0.0/16, no-resolve
+IP-CIDR, 172.16.0.0/12, no-resolve
