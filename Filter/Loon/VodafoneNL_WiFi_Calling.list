@@ -1,22 +1,22 @@
 # ==========================================
-# 3. Vodafone Netherlands (MCC 204, MNC 04)
+# Vodafone Netherlands (Loon 纯净规则集格式)
 # ==========================================
 
-# --- [3.1] 荷兰 ePDG 标准域名 (3GPP) ---
-# 自动涵盖 epdg / ss.epdg / geo 等所有子域名变体
+# --- [1] 荷兰 ePDG 标准 3GPP 域名 ---
 DOMAIN-SUFFIX, mnc004.mcc204.pub.3gppnetwork.org
 
-# --- [3.2] 荷兰本地业务与鉴权域名 ---
-# 自动涵盖 vodafone.nl 下的所有子域名（wifi/entitlement/config/ims/gprs）
+# --- [2] 荷兰本地业务域名 ---
 DOMAIN-SUFFIX, vodafone.nl
 
-# --- [3.3] 荷兰定向发现服务器 (非全后缀) ---
-# 仅针对荷兰区域 (nle)
+# --- [3] 荷兰专属定向发现服务器 ---
 DOMAIN, v-hds-nle.vodafone.com
+DOMAIN-SUFFIX, entitlement.vodafone.com
 
-# --- [3.4] 荷兰核心网段 (IMS/EPC 基础设施) ---
-# 强制不解析 IP，直接撞向荷兰节点
+# --- [4] 荷兰核心网段 (不解析 IP 直接路由) ---
 IP-CIDR, 139.7.0.0/16, no-resolve
 IP-CIDR, 82.216.0.0/16, no-resolve
-IP-CIDR,109.32.0.0/13, no-resolve
-IP-CIDR,109.39.144.148/13, no-resolve
+IP-CIDR, 109.32.0.0/13, no-resolve
+
+# --- [5] IPsec 端口逻辑组合规则 ---
+AND,((DEST-PORT,500),(PROTOCOL,UDP))
+AND,((DEST-PORT,4500),(PROTOCOL,UDP))
