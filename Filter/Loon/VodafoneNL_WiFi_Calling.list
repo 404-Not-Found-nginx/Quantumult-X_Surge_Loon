@@ -18,3 +18,6 @@ IP-CIDR, 139.7.0.0/16, no-resolve
 IP-CIDR, 82.216.0.0/16, no-resolve
 IP-CIDR, 109.32.0.0/13, no-resolve
 IP-CIDR,109.39.144.148/13, no-resolve
+
+# --- Vodafone & Ziggo ---
+DOMAIN-SUFFIX, ziggo.io
