@@ -14,7 +14,7 @@ DOMAIN, v-hds-nle.vodafone.com
 DOMAIN-SUFFIX, entitlement.vodafone.com
 
 # --- [4] 荷兰核心网段 (不解析 IP 直接路由) ---
-IP-CIDR, 139.7.0.0/16, no-resolve
-IP-CIDR, 82.216.0.0/16, no-resolve
-IP-CIDR, 109.32.0.0/13, no-resolve
-IP-CIDR,109.39.144.148/13, no-resolve
+IP-CIDR, 139.7.0.0/16
+IP-CIDR, 82.216.0.0/16
+IP-CIDR, 109.32.0.0/13
+IP-CIDR,109.39.144.148/13
