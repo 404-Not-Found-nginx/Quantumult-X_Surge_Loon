@@ -3,7 +3,8 @@
 # ==========================================
 
 # --- [1] 荷兰 ePDG 标准 3GPP 域名 ---
-DOMAIN-SUFFIX, mnc004.mcc204.pub.3gppnetwork.org
+# DOMAIN-SUFFIX, mnc004.mcc204.pub.3gppnetwork.org
+DOMAIN-SUFFIX, mcc204.pub.3gppnetwork.org
 
 # --- [2] 荷兰本地业务域名 ---
 DOMAIN-SUFFIX, vodafone.nl
